@@ -1,0 +1,182 @@
+body {
+  background: rgb(233, 230, 230);
+}
+
+h1 {
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  position: relative;
+  max-width: 450px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  background: white;
+}
+
+.board_square {
+  position: relative;
+  flex: 1 0 30%;
+  height: 0px;
+  border: 1px solid black;
+  padding-top: 33.3%;
+}
+
+.x,
+.o {
+  stroke: black;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  stroke-width: 7;
+}
+
+.board_square--win {
+  stroke: black;
+  position: absolute;
+  stroke-width: 70;
+}
+
+.x__line1,
+.x__line2 {
+  animation: x-a 0.5s cubic-bezier(0.4, 0.01, 1, 1) 0s 1 normal backwards;
+  stroke-dasharray: 85;
+}
+
+.board_square--win {
+  animation: winLine8 1s cubic-bezier(0.4, 0.01, 1, 1) 0s 1 normal backwards;
+  animation: winLine7 1s cubic-bezier(0.4, 0.01, 1, 1) 0s 1 normal backwards;
+  animation: winLine6 1s cubic-bezier(0.4, 0.01, 1, 1) 0s 1 normal backwards;
+  animation: winLine5 1s cubic-bezier(0.4, 0.01, 1, 1) 0s 1 normal backwards;
+  animation: winLine4 1s cubic-bezier(0.4, 0.01, 1, 1) 0s 1 normal backwards;
+  animation: winLine3 1s cubic-bezier(0.4, 0.01, 1, 1) 0s 1 normal backwards;
+  animation: winLine2 1s cubic-bezier(0.4, 0.01, 1, 1) 0s 1 normal backwards;
+  animation: winLine 1s cubic-bezier(0.4, 0.01, 1, 1) 0s 1 normal backwards;
+  stroke-dasharray: 3450;
+}
+
+@keyframes winLine {
+  from {
+    stroke-dashoffset: 3450;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes winLine2 {
+  from {
+    stroke-dashoffset: 3450;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes winLine3 {
+  from {
+    stroke-dashoffset: 2400;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes winLine4 {
+  from {
+    stroke-dashoffset: 2400;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes winLine5 {
+  from {
+    stroke-dashoffset: 2400;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes winLine6 {
+  from {
+    stroke-dashoffset: 2400;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes winLine7 {
+  from {
+    stroke-dashoffset: 2400;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes winLine8 {
+  from {
+    stroke-dashoffset: 2400;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes x-a {
+  from {
+    stroke-dashoffset: 85;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.o {
+  fill: none;
+  stroke-dasharray: 190;
+  animation: o-a 1s cubic-bezier(0.4, 0.01, 1, 1) 0s 1 normal backwards;
+}
+
+@keyframes o-a {
+  from {
+    stroke-dashoffset: 190;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.XWin,
+.OWin {
+  display: none;
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 22%;
+  font-size: 70px;
+  z-index: 2;
+  color: aliceblue;
+  text-shadow: black 2px 2px 0, rgb(97, 96, 96) -2px -2px 0, black -2px 2px 0,
+    rgb(97, 96, 96) 2px -2px 0;
+}
+
+button {
+  display: table;
+  vertical-align: middle;
+  text-align: center;
+
+  border-radius: 5px;
+  height: 30px;
+  background: cyan;
+  margin: 10px auto;
+}

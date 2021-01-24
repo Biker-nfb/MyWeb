@@ -1,0 +1,369 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.top {
+  text-align: center;
+  font-size: 50px;
+  border-bottom: 3px solid black;
+  width: 150px;
+  margin: 0;
+}
+
+.bottom {
+  font-size: 18px;
+  margin: 0;
+  font-style: italic;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-between;
+  height: 100px;
+  width: 99%;
+  background: white;
+  position: fixed;
+  top: 0;
+}
+
+.nav li {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 16px;
+  padding-right: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav li:hover {
+  background: #e5e5e5;
+  border-bottom: 3px solid black;
+  cursor: pointer;
+}
+
+.first,
+.expirience,
+.skills,
+.my_work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 85vh;
+}
+
+.first {
+  background: url(./images/LPWA-Solutions-for-IoT-in-Smart-Buildings-BW.jpg);
+  margin-top: 92px;
+}
+
+.intro {
+  display: flex;
+  width: 700px;
+  max-width: 900px;
+  min-width: 650px;
+  height: 400px;
+  background: #e5e5e5;
+}
+
+.text {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.title_main {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.title,
+.title_main-sm {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.title_sm,
+.title_main-sm {
+  padding-bottom: 15px;
+}
+
+p {
+  margin: 0;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  max-width: 900px;
+  min-width: 650px;
+  height: 60px;
+  box-sizing: border-box;
+  background: black;
+}
+
+.social img {
+  height: 30px;
+  padding-left: 30px;
+}
+
+.social img:hover {
+  padding-bottom: 7px;
+}
+
+.expirience {
+  background: #f5f5f5;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.ex {
+  font-size: 20px;
+}
+
+.skills_images--line1,
+.skills_images--line2 {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sk_img {
+  width: 100px;
+  height: 150px;
+}
+
+.my_work {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-around;
+  background: #7c7a7a;
+}
+
+.my_work--games {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.MY_WORK-img {
+  padding: 0 5%;
+  width: 90%;
+}
+
+.CONTACTS {
+  background: #5c5b5b;
+}
+
+@media (orientation: portrait) {
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+  }
+
+  .nav {
+    padding-top: 0;
+  }
+
+  .top {
+    width: none;
+  }
+
+  .my_work {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-around;
+    background: #7c7a7a;
+    height: 130vw;
+  }
+  .intro,
+  .social {
+    width: 85vw;
+    min-width: 0;
+  }
+  .text {
+    width: 300px;
+    padding-left: 20px;
+  }
+  .pic1 {
+    display: flex;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 750px) {
+  .logo {
+    padding-left: 0;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+  }
+
+  .nav {
+    padding-top: 0;
+  }
+
+  .top {
+    width: none;
+  }
+
+  .my_work {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-around;
+    background: #7c7a7a;
+    height: 130vw;
+  }
+
+  .social {
+    width: 85vw;
+  }
+
+  .first {
+    background-size: cover;
+  }
+
+  .text {
+    width: 100px;
+  }
+}
+
+@media (max-width: 620px) {
+  .nav {
+    display: flex;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  li {
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo {
+    padding-left: 0;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    height: 270vw;
+  }
+
+  .expirience {
+    background: #f5f5f5;
+    font-size: 13px;
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+
+  .skills {
+    height: 270vw;
+  }
+
+  .skills_images--line1,
+  .skills_images--line2 {
+    flex-wrap: wrap;
+  }
+
+  .MY_WORK-img {
+    width: 95%;
+    box-sizing: border-box;
+  }
+
+  .my_work {
+    height: 200vw;
+  }
+
+  .my_work--games {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    background: #7c7a7a;
+    padding-left: 5%;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: auto;
+    background: none;
+    box-sizing: border-box;
+  }
+
+  .text {
+    display: flex;
+    background: #e5e5e5;
+    width: 330px;
+    padding-top: 10px;
+    margin-left: 0;
+  }
+
+  .pic {
+    width: 350px;
+  }
+  .pic1 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .social {
+    width: 350px;
+  }
+}
