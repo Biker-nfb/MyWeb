@@ -306,7 +306,8 @@ p {
 
   .expirience {
     background: #f5f5f5;
-    font-size: 13px;
+    height: auto;
+    font-size: 12px;
     padding: 0 5%;
     box-sizing: border-box;
   }
